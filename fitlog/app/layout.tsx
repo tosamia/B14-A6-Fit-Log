@@ -1,5 +1,6 @@
 
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { WorkoutProvider } from "@/context/WorkoutContext";
@@ -20,12 +21,15 @@ export default function RootLayout({
     <html lang="en">
       <body className="min-h-screen bg-[#0d0f12] text-white">
 
-        {/* Provider must wrap Navbar and all pages */}
+        {/* Provider wraps Navbar and all pages */}
         <WorkoutProvider>
 
           <div className="flex min-h-screen flex-col">
 
-            <Navbar />
+            {/* Suspense fixes usePathname build error */}
+            <Suspense fallback={null}>
+              <Navbar />
+            </Suspense>
 
             <main className="flex-1">
               {children}
