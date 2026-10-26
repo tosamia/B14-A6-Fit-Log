@@ -9,7 +9,7 @@ The application is built using Next.js, TypeScript, and Tailwind CSS.
 
 ## Live Website
 
-Live Link: Add your Vercel deployment URL here
+https://fitlog-coral-nu.vercel.app/
 
 ## GitHub Repository
 
