@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# FitLog – Workout Library & Fitness Planner
 
-First, run the development server:
+FitLog is a responsive fitness web application that helps users
+explore workouts, view exercise details, create a daily workout
+plan, and save exercises for later.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The application is built using Next.js, TypeScript, and Tailwind CSS.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Live Website
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Live Link: Add your Vercel deployment URL here
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## GitHub Repository
 
-## Learn More
+https://github.com/tosamia/B14-A6-Fit-Log
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Browse a library of workouts fetched from an API.
+- View detailed information about each workout.
+- Sort workouts by duration, calories burned, and rating.
+- Add up to 5 exercises to today's workout plan.
+- Save favorite workouts for later.
+- Mark planned workouts as completed.
+- Remove workouts from the plan or saved list.
+- View total exercises, minutes, and calories in My Plan.
+- Store workout plans and saved exercises using localStorage.
+- Show toast notifications for user actions.
+- Display a custom 404 page for invalid routes.
+- Responsive design for mobile, tablet, and desktop.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Technologies Used
 
-## Deploy on Vercel
+- Next.js 16
+- React
+- TypeScript
+- Tailwind CSS
+- Lucide React
+- React Toastify
+- Local Storage
+- REST API
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Pages
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Home Page
+
+The Home page contains a workout library where users can
+browse exercises and sort them by different criteria.
+
+### Workout Details Page
+
+Each workout has a separate dynamic details page.
+
+Users can view:
+
+- Workout name and description
+- Equipment
+- Difficulty
+- Sets and repetitions
+- Duration
+- Calories burned
+- Rating
+- Muscle groups
+- Exercise instructions
+
+Users can also add workouts to their daily plan or
+save them for later.
+
+### My Plan Page
+
+The My Plan page has two tabs:
+
+**Today's Plan**
+- Shows workouts added to the daily plan.
+- Allows a maximum of 5 workouts.
+- Displays total minutes and calories.
+- Allows users to mark workouts as done.
+- Allows users to remove workouts.
+
+**Saved**
+- Displays workouts saved for later.
+- Allows users to view details or remove saved workouts.
+
+## API
+
+Workout data is fetched from:
+
+https://api.abcz.workers.dev/api/fitlog
+
+Backup API:
+
+https://api.api-store.workers.dev/api/fitlog
+
+## Run Locally
+
+1. Clone the repository:
+
+   git clone https://github.com/tosamia/B14-A6-Fit-Log.git
+
+2. Open the application folder:
+
+   cd B14-A6-Fit-Log/fitlog
+
+3. Install dependencies:
+
+   npm install
+
+4. Start the development server:
+
+   npm run dev
+
+5. Open the website:
+
+   http://localhost:3000
+
+## Production Build
+
+To create a production build:
+
+   npm run build
+
+## Future Improvements
+
+- User authentication
+- Personalized fitness goals
+- Workout progress charts
+- Weekly workout schedules
+- Exercise search and filtering
+
+## Author
+
+GitHub: https://github.com/tosamia
+
+---
+
+Built with Next.js, TypeScript, and Tailwind CSS.
